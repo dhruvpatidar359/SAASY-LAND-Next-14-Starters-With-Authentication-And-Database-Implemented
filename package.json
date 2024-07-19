@@ -17,8 +17,8 @@
   },
   "type": "module",
   "scripts": {
-    "dev": "contentlayer build && next dev --experimental-https",
-    "build": "contentlayer build && next build",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start",
     "postinstall": "pnpm prisma generate",
     "db:generate": "pnpm prisma generate",
@@ -32,8 +32,8 @@
     "prettier:format": "prettier --write \"**/*.{ts,tsx,mdx}\" --cache",
     "prettier:check": "prettier --check \"**/*.{ts,tsx,mdx}\" --cache",
     "typecheck": "tsc --noEmit",
-    "lint": "contentlayer build && next lint",
-    "lint:fix": "contentlayer build && next lint --fix"
+    "lint": " next lint",
+    "lint:fix": " next lint --fix"
   },
   "dependencies": {
     "@auth/core": "^0.30.0",
@@ -78,14 +78,14 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "cmdk": "^1.0.0",
-    "contentlayer": "^0.3.4",
+    
     "date-fns": "^3.6.0",
     "dotenv": "^16.4.5",
     "framer-motion": "^11.1.9",
     "jsonwebtoken": "^9.0.2",
     "next": "14.2.3",
     "next-auth": "5.0.0-beta.11",
-    "next-contentlayer": "^0.3.4",
+    
     "next-themes": "^0.3.0",
     "nodemailer": "^6.9.13",
     "react": "^18.3.1",
