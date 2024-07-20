@@ -2,10 +2,10 @@ import { type PricingPlan } from "@/types"
 
 export const pricingPlans: PricingPlan[] = [
   {
-    id: "basic",
-    name: "Basic",
+    id: "free",
+    name: "Free",
     description: "Perfect for when you are just getting started",
-    features: ["Up to 5 projects", "Basic analytics and reporting"],
+    features: ["Get 5 free crediets"],
     limitations: [
       "No custom branding",
       "No commercial license",

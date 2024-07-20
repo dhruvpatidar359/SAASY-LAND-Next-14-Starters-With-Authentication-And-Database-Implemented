@@ -39,17 +39,16 @@ export async function HeroSection() {
         ) : null}
         <h1 className="animate-fade-up font-urbanist text-5xl font-extrabold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
           <Balancer>
-            Fast-Track Your Business Launch with{" "}
+          Discover Safe Foods and Delicious Recipes Tailored to Your Condition with{" "}
             <span className="bg-gradient-to-r from-pink-600 to-purple-400 bg-clip-text font-extrabold text-transparent">
-              SaaSy Land
+              Nutri Disease
             </span>
           </Balancer>
         </h1>
 
         <h3 className="max-w-2xl animate-fade-up text-muted-foreground sm:text-xl sm:leading-8">
           <Balancer>
-            Your shortcut to startup success. The ultimate, modern, open-source
-            Next.js template, with everything you need set up and ready to use.
+          Tailored Food Safety and Delicious Recipes for Your Condition. Why ask friends or family when you can ask us?
           </Balancer>
         </h3>
 

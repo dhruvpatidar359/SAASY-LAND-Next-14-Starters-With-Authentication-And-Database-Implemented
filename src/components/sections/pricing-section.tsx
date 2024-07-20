@@ -33,16 +33,13 @@ export function PricingSection(): JSX.Element {
             <Balancer>
               It&apos;s{" "}
               <span className="bg-gradient-to-r from-pink-600 to-purple-400 bg-clip-text text-transparent">
-                Free Forever!
+                Freemium!
               </span>
             </Balancer>
           </h2>
           <h3 className="max-w-2xl text-muted-foreground sm:text-xl sm:leading-8">
             <Balancer>
-              {siteConfig.name} is completely free and open source. The pricing
-              section is there to serve as an example of how you could set it up
-              for your own SaaS product. We have no plans and no intentions to
-              make this a paid product.
+               Try It Free: Get Up to 5 Credits on Us! After that, additional credits are available for purchase.
             </Balancer>
           </h3>
         </div>

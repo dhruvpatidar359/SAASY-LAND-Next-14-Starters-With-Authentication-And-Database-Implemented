@@ -13,13 +13,16 @@ import { signInWithPasswordSchema } from "@/validations/auth"
 
 import { MagicLinkEmail } from "@/components/emails/magic-link-email"
 
+  
+
 export default {
   providers: [
     GoogleProvider({
-      clientId: env.GOOGLE_ID,
-      clientSecret: env.GOOGLE_SECRET,
+      clientId: "60930318154-vibh604mfav8g1kj1s4427pavs27nbin.apps.googleusercontent.com",
+      clientSecret: "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",
       allowDangerousEmailAccountLinking: true,
     }),
+    
     GitHubProvider({
       clientId: env.GITHUB_ID,
       clientSecret: env.GITHUB_SECRET,
@@ -77,4 +80,5 @@ export default {
       },
     }),
   ],
+  secret: process.env.NEXTAUTH_SECRET,
 } satisfies NextAuthConfig

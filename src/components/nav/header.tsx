@@ -21,9 +21,12 @@ import { Icons } from "@/components/icons"
 import { Navigation } from "@/components/nav/navigation"
 import { NavigationMobile } from "@/components/nav/navigation-mobile"
 import { ThemeToggle } from "@/components/theme-toggle"
+import { useTheme } from "next-themes"
+import Image from "next/image"
 
 export async function Header(): Promise<JSX.Element> {
-  const session = await auth()
+  const session = await auth();
+  
 
   return (
     <header className="sticky top-0 z-40 flex h-20 w-full bg-transparent">
@@ -32,7 +35,7 @@ export async function Header(): Promise<JSX.Element> {
           href="/"
           className="flex items-center justify-center gap-2 text-lg font-bold tracking-wide transition-all duration-300 ease-in-out"
         >
-          <Icons.rocket className="size-6 md:hidden lg:flex" />
+          <Icons.rocket className="size-8 md:hidden lg:flex" />
           <span className="hidden md:flex">{siteConfig.name}</span>
         </Link>
         <Navigation navItems={siteConfig.navItems} />

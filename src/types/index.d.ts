@@ -37,7 +37,7 @@ export interface BlogPostParamsProps {
 }
 
 export interface PricingPlan {
-  id: "basic" | "standard" | "premium"
+  id: "free" | "standard" | "premium"
   name: string
   description: string
   features: string[]

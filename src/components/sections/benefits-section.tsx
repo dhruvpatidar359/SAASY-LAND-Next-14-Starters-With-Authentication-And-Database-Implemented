@@ -26,11 +26,11 @@ export function BenefitsSection(): JSX.Element {
           </h2>
           <h3 className="max-w-2xl text-muted-foreground sm:text-xl sm:leading-8">
             <Balancer>
-              Your competitors are already using{" "}
-              <span className="font-semibold text-foreground">
+            Millions are benefiting from personalized dietary advice. {" "}
+              {/* <span className="font-semibold text-foreground">
                 {siteConfig.name}
-              </span>{" "}
-              and similar products, gaining time and competitive advantage.
+              </span>{" "} */}
+              Stay ahead with our advanced AI-driven solutions to ensure you make the best choices for your health!
               Don&apos;t get left behind!
             </Balancer>
           </h3>
