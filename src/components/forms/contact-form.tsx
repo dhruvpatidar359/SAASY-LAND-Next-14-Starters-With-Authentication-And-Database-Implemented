@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { submitContactForm } from "@/actions/email"
+
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 
@@ -36,25 +36,25 @@ export function ContactForm(): JSX.Element {
   })
 
   function onSubmit(formData: ContactFormInput): void {
-    startTransition(async () => {
+    startTransition( () => {
       try {
-        const message = await submitContactForm(formData)
+        // const message = await submitContactForm(formData)
 
-        switch (message) {
-          case "success":
-            toast({
-              title: "Thank you!",
-              description: "Your message has been sent",
-            })
-            form.reset()
-            break
-          default:
-            toast({
-              title: "Something went wrong",
-              description: "Please try again",
-              variant: "destructive",
-            })
-        }
+        // switch (message) {
+        //   case "success":
+        //     toast({
+        //       title: "Thank you!",
+        //       description: "Your message has been sent",
+        //     })
+        //     form.reset()
+        //     break
+        //   default:
+        //     toast({
+        //       title: "Something went wrong",
+        //       description: "Please try again",
+        //       variant: "destructive",
+        //     })
+        // }
       } catch (error) {
         toast({
           description: "Something went wrong. Please try again",
