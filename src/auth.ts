@@ -19,7 +19,7 @@ export const {
     signOut: "/signout",
     verifyRequest: "/signin/magic-link-signin",
   },
-  secret: env.AUTH_SECRET,
+
   session: {
     strategy: "jwt",
     maxAge: 30 * 24 * 60 * 60, // 30 daysd
@@ -30,24 +30,7 @@ export const {
       if (user.id) await linkOAuthAccount({ userId: user.id })
     },
   },
-  callbacks: {
-    jwt({ token, user }) {
-      if (user) token.role = user.role
-      return token
-    },
-    session({ session, token }) {
-      session.user.role = token.role as "USER" | "ADMIN"
-      return session
-    },
-    async signIn({ user, account }) {
-      if (!user.id) return false
-      if (account?.provider !== "credentials") return true
-
-      const existingUser = await getUserById({ id: user.id })
-
-      return !existingUser?.emailVerified ? false : true
-    },
-  },
-  adapter: PrismaAdapter(prisma),
+ 
+  
   ...authConfig,
 })

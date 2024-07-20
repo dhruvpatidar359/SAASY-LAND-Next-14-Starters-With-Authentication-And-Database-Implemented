@@ -108,7 +108,7 @@ export async function Header(): Promise<JSX.Element> {
             ) : (
               <Link
                 aria-label="Get started"
-                href="/signup"
+                href="/signin"
                 className={cn(buttonVariants({ size: "sm" }), "ml-2")}
               >
                 Get Started
